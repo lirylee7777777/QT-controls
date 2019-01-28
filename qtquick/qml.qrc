@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>qml/main.qml</file>
+        <file>qml/WindowHead.qml</file>
+        <file>qml/WindowLeftList.qml</file>
+        <file>qml/WindowTool.qml</file>
+        <file>qml/Button.qml</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file>images/close.png</file>
+        <file>images/file.png</file>
+        <file>images/san.png</file>
+    </qresource>
+</RCC>
