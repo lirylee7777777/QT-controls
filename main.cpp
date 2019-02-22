@@ -1,5 +1,6 @@
 #include <QGuiApplication>
-#include <QQmlApplicationEngine>
+#include "src/window.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -7,10 +8,10 @@ int main(int argc, char *argv[])
 
     QGuiApplication app(argc, argv);
 
-    QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-    if (engine.rootObjects().isEmpty())
-        return -1;
+    LL::Window window;
+    window.setResizeMode(QQuickView::SizeRootObjectToView);
+    window.setSource(QUrl::fromLocalFile("D:/Code/test_app/qt_controls/qml/LLWindow.qml"));
+    window.show();
 
     return app.exec();
 }
